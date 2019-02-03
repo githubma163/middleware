@@ -10,7 +10,7 @@ Dubbo已经被很多公司使用和验证，可靠性和性能非常好。当当
 
 2. HSF（好舒服）
 
-阿里内部的RPC使用框架，由毕玄领导开发，起源于淘宝。是阿里内部的默认RPC框架，支付宝有自己单独的RPC框架叫SOAF，后面会介绍。HSF中已经整合了Dubbo，HSF依赖于ConfigServer（类似Zookeeper）。HSF和阿里其他的中间件都已经打通，HSF以及其他的中间件一起打包，有了Pandora。HSF提供了测试页面，不需要编写任何代码即可测试一个RPC服务。Dubbo也有类似的功能，具体可以参考https://github.com/githubma163/dubbo-ops
+阿里内部的RPC使用框架，由毕玄领导开发，起源于淘宝。是阿里内部的默认RPC框架，支付宝有自己单独的RPC框架叫SOAF RPC，后面会介绍。HSF中已经整合了Dubbo，HSF依赖于ConfigServer（类似Zookeeper）。HSF和阿里其他的中间件都已经打通，HSF以及其他的中间件一起打包，有了Pandora。HSF提供了测试页面，不需要编写任何代码即可测试一个RPC服务。Dubbo也有类似的功能，具体可以参考https://github.com/githubma163/dubbo-ops
 
 3. TDDL（头都大了）
 
@@ -20,4 +20,14 @@ Dubbo已经被很多公司使用和验证，可靠性和性能非常好。当当
 http://staticdata.yuanshihui.com/data/M00/A0/1C/CIECAFuea6eAKF-NAAEC1xyjYhM200.png
 
 详细的TDDL介绍可以参考http://www.yuanshihui.cn/detail/17d80f423830fdb8de696893
+
+4.SOAF
+
+SOFA 是蚂蚁金服自主研发的金融级分布式中间件，包含了构建金融级云原生架构所需的各个组件，包括微服务研发框架，RPC 框架，服务注册中心，分布式定时任务，限流/熔断框架，动态配置推送，分布式链路追踪，Metrics监控度量，分布式高可用消息队列，分布式事务框架，分布式数据库代理层等组件，是一套分布式架构的完整的解决方案，也是在金融场景里锤炼出来的最佳实践。官网地址：https://www.sofastack.tech/
+
+5.Pandora
+ 
+简单来说是一些中间件jar包的集合。java标准的包邮jar，war，ear，Pandora中所有jar包的集合叫做sar。有了Pandora，可以实现classloader的隔离，防止一些jar包版本的冲突，可以统一升级中间件。Pandora sar默认已经安装到阿里所有的T4机器，这样可以统一的维护整个中间件。
+
+
 
