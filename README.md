@@ -31,7 +31,15 @@ SOFA 是蚂蚁金服自主研发的金融级分布式中间件，包含了构建
 
 6.ConfigServer
 
-类似于外界开源的Zookeeper，由毕玄领导开发。开发ConfigServer的时候，Zookeeper还没有出现。现在阿里的非持久数据的配置管理中心都是依赖于ConfigServer。主要的功能就是提供地址服务和异地容灾，像HSF以及Notify都是依赖ConfigServer
+类似于外界开源的Zookeeper，由毕玄领导开发。开发ConfigServer的时候，Zookeeper还没有出现。现在阿里的非持久数据的配置管理中心都是依赖于ConfigServer。主要的功能就是提供地址服务和异地容灾，像HSF以及Notify都是依赖ConfigServer。
+
+7.Diamond
+
+和ConfigServer非常类似，但是Diamond中的配置是会持久化的，Diamond号称阿里最稳定的中间件。Diamond采取了多份存储，数据库（主备），服务端缓存，客户端缓存，指定的容灾目录，通过http长轮询实现配置的动态更新。
+
+具体介绍参考：https://tbstone.iteye.com/blog/1488817
+
+
 
 
 
