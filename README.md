@@ -13,6 +13,7 @@ Dubbo已经被很多公司使用和验证，可靠性和性能非常好。当当
 阿里内部的RPC使用框架，由毕玄领导开发，起源于淘宝。是阿里内部的默认RPC框架，支付宝有自己单独的RPC框架叫SOAP，后面会介绍。HSF中已经整合了Dubbo，HSF依赖于ConfigServer（类似Zookeeper）。HSF和阿里其他的中间件都已经打通，HSF以及其他的中间件一起打包，有了Pandora。HSF提供了测试页面，不需要编写任何代码即可测试一个RPC服务。Dubbo也有类似的功能，具体可以参考https://github.com/githubma163/dubbo-ops。
 
 3. TDDL（头都大了）
+
 阿里内部的分库分表框架，和mysql完全打通，由阿里的CTO行癫领导开发。有了TDDL，应用程序操作数据库不用关心底层的数据库处理逻辑。分库分表需要事先写好表达式。TDDL接入时只需要填写AppName和GroupId即可。阿里内部基于TDDL开发了一个mysql的可视化操作页面，这样数据查询和导出都可以在页面上操作，并且和集团的审批打通。TDDL的架构图如下：
 http://staticdata.yuanshihui.com/data/M00/A0/1C/CIECAFuea6eAKF-NAAEC1xyjYhM200.png
 
