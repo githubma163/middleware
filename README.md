@@ -45,6 +45,11 @@ SOFA 是蚂蚁金服自主研发的金融级分布式中间件，包含了构建
 
 官网地址：https://rocketmq.apache.org/
 
+9.VIPServer
+
+一个软件负载均衡系统，主要是用来取代DNS轮询，F5和LVS。F5的介绍可以查看https://f5.com/zh LVS就是之前阿里的高级研究员正明的作品，已经被整合到linux中了，LVS的具体介绍可以参考http://www.linuxvirtualserver.org/zh/lvs1.html
+LVS的主要应用场景是异地多活，灰度发布，流量调度。
+
 
 
 
