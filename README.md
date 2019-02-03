@@ -27,7 +27,11 @@ SOFA 是蚂蚁金服自主研发的金融级分布式中间件，包含了构建
 
 5.Pandora
  
-简单来说是一些中间件jar包的集合。java标准的包邮jar，war，ear，Pandora中所有jar包的集合叫做sar。有了Pandora，可以实现classloader的隔离，防止一些jar包版本的冲突，可以统一升级中间件。Pandora sar默认已经安装到阿里所有的T4机器，这样可以统一的维护整个中间件。
+简单来说是一些中间件jar包的集合。java标准的包邮jar，war，ear，Pandora中所有jar包的集合叫做sar。有了Pandora，可以实现classloader的隔离，防止一些jar包版本的冲突，可以统一升级中间件。Pandora sar默认已经安装到阿里所有的T4机器，这样可以统一的维护整个中间件。现在出现了springboot，Pandora也出了Pandora boot，主要是把Spring boot的jar包集合和阿里中间件的jar包整合在一起。
+
+6.ConfigServer
+
+类似于外界开源的Zookeeper，由毕玄领导开发。开发ConfigServer的时候，Zookeeper还没有出现。现在阿里的非持久数据的配置管理中心都是依赖于ConfigServer。主要的功能就是提供地址服务和异地容灾，像HSF以及Notify都是依赖ConfigServer
 
 
 
