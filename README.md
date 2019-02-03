@@ -10,5 +10,5 @@ Dubbo已经被很多公司使用和验证，可靠性和性能非常好。当当
 
 2. HSF（好舒服）
 
-阿里内部的RPC使用框架，由毕玄开发，起源于淘宝。是阿里内部的默认RPC框架，支付宝有自己单独的RPC框架。HSF中已经整合了Dubbo，HSF依赖于ConfigServer（类似Zookeeper）。HSF和阿里其他的中间件都已经打通，并且HSF提供了测试页面，不需要编写任何代码即可测试一个RPC服务。Dubbo也有类似的功能，具体可以参考https://github.com/githubma163/dubbo-ops。
+阿里内部的RPC使用框架，由毕玄领导开发，起源于淘宝。是阿里内部的默认RPC框架，支付宝有自己单独的RPC框架叫SOAP，后面会介绍。HSF中已经整合了Dubbo，HSF依赖于ConfigServer（类似Zookeeper）。HSF和阿里其他的中间件都已经打通，并且HSF提供了测试页面，不需要编写任何代码即可测试一个RPC服务。Dubbo也有类似的功能，具体可以参考https://github.com/githubma163/dubbo-ops。
 
