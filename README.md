@@ -39,6 +39,12 @@ SOFA 是蚂蚁金服自主研发的金融级分布式中间件，包含了构建
 
 具体介绍参考：https://tbstone.iteye.com/blog/1488817
 
+8.MetaQ
+
+阿里的消息中间件，参考kafak实现，MeatQ现在改名为RocketMQ，成为Apache的孵化器项目，但是阿里内部还是叫metaQ。MetaQ和阿里另外一个消息队列Notify的最大区别是，MetaQ基于pull方式，Notify，基于Push方式。阿里早些的项目都是使用Notify，现在已经慢慢改为MetaQ，MetaQ现在的维护人是释嘉。
+
+官网地址：https://rocketmq.apache.org/
+
 
 
 
