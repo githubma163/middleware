@@ -51,6 +51,14 @@ SOFA 是蚂蚁金服自主研发的金融级分布式中间件，包含了构建
 LVS的主要应用场景是异地多活，灰度发布，流量调度。
 
 
+### 中间件博客网站推荐
+
+1.阿里巴巴中间件博客http://jm.taobao.org/
+
+2.美团技术博客https://tech.meituan.com/
+
+3.唯品会技术大牛http://calvin1978.blogcn.com/
+
 
 
 
