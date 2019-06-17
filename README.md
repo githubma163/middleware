@@ -14,7 +14,7 @@ Dubbo已经被很多公司使用和验证，可靠性和性能非常好。当当
 
 3. TDDL（头都大了）
 
-阿里内部的分库分表框架，和mysql完全打通，由阿里的CTO行癫领导开发。有了TDDL应用程序操作数据库不用关心底层的数据库处理逻辑。TDDL接入时只需要填写AppName和GroupId，分库分表需要事先写好表达式。阿里内部基于TDDL开发了一个mysql的可视化操作页面（类似于网页版navicate），这样数据查询和导出
+阿里内部的分库分表框架，和mysql完全打通，由阿里的CTO行癫领导开发。有了TDDL应用程序操作数据库不用关心底层的数据库处理逻辑。TDDL接入时只需要填写AppName和GroupId，分库分表需要事先写好表达式。阿里内部基于TDDL开发了一个mysql的可视化操作页面（idb,类似于网页版navicate），这样数据查询和导出
 都可以在页面上操作，并且和集团的审批打通。TDDL的架构图如下：
 
 http://staticdata.yuanshihui.com/data/M00/A0/1C/CIECAFuea6eAKF-NAAEC1xyjYhM200.png
