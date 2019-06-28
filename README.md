@@ -52,7 +52,9 @@ LVS的主要应用场景是异地多活，灰度发布，流量调度。
 
 10.工具类
 
-工具类准确来说不能算是一个完整的中间件，但是能够提升开发的效率。外面比较常用的工具类，比如fastjson https://github.com/alibaba/fastjson，这个操作json特别方便。友情提示一下：使用fastjson时候最好使用最新的版本。还有druid https://github.com/alibaba/druid，操作mysql非常方便，并且自带了一套监控页面。这2个工具的作者都是同一个人，温绍（花名高铁），他的github主页是https://github.com/wenshao
+工具类准确来说不能算是一个完整的中间件，但是能够提升开发的效率。外面比较常用的工具类，比如fastjson https://github.com/alibaba/fastjson，
+这个操作json特别方便。友情提示一下：使用fastjson时候最好使用最新的版本。还有druid https://github.com/alibaba/druid，
+操作mysql非常方便，并且自带了一套监控页面。这2个工具的作者都是同一个人，温绍（花名高铁），他的github主页是https://github.com/wenshao
 
 11.其他
 
@@ -60,9 +62,13 @@ LVS的主要应用场景是异地多活，灰度发布，流量调度。
 
 （1）定时任务管理 tbschedule，主要是分布式定时任务管理 https://github.com/nmyphp/tbschedule
 
-（2）事务管理 tbtransaction https://github.com/mandarenmanman/TBtransaction，这个不是很推荐使用，目前单机事务还是推荐使用spring自带的事务管理
+（2）事务管理 tbtransaction https://github.com/mandarenmanman/TBtransaction，
 
-（3）规则引擎 qlexpress，https://github.com/alibaba/QLExpress，这个业界现在也有非常成熟的技术，像jboss的drools规则引擎
+这个不是很推荐使用，目前单机事务还是推荐使用spring自带的事务管理
+
+（3）规则引擎 qlexpress，https://github.com/alibaba/QLExpress，
+
+这个业界现在也有非常成熟的技术，像jboss的drools规则引擎
 
 ### 大众点评java中间件
 
