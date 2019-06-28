@@ -50,6 +50,15 @@ SOFA 是蚂蚁金服自主研发的金融级分布式中间件，包含了构建
 一个软件负载均衡系统，主要是用来取代DNS轮询，F5和LVS。F5的介绍可以查看https://f5.com/zh LVS就是之前阿里的高级研究员正明的作品，已经被整合到linux中了，LVS的具体介绍可以参考http://www.linuxvirtualserver.org/zh/lvs1.html
 LVS的主要应用场景是异地多活，灰度发布，流量调度。
 
+10.工具类
+工具类准确来说不能算是一个完整的中间件，但是能够提升开发的效率。外面比较常用的工具类，比如fastjson https://github.com/alibaba/fastjson，这个操作json特别方便。友情提示一下：使用fastjson时候最好使用最新的版本。还有druid https://github.com/alibaba/druid，操作mysql非常方便，并且自带了一套监控页面。这2个工具的作者都是同一个人，温绍（花名高铁），他的github主页是https://github.com/wenshao
+
+11.其他
+这里主要介绍阿里的一个牛人（花名玄难）写的一些中间件。玄难最开始是阿里汇金系统负责人，当时他自己写了很多中间件，不过很多很可惜，没有和集团的中间件打通，导致很多中间件在集团无法推广。
+（1）定时任务管理 tbschedule，主要是分布式定时任务管理 https://github.com/nmyphp/tbschedule
+（2）事务管理 tbtransaction https://github.com/mandarenmanman/TBtransaction，这个不是很推荐使用，目前单机事务还是推荐使用spring自带的事务管理
+（3）规则引擎 qlexpress，https://github.com/alibaba/QLExpress，这个业界现在也有非常成熟的技术，像jboss的drools规则引擎
+
 ### 大众点评java中间件
 
 大众点评已经和美团合并了，但是大众点评的一套java中间件非常优秀。大众点评原来使用.net架构，后来改为java，并且好几个架构师都是从阿里过来的，自己开发了一整套java方面的中间件。
